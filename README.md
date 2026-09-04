@@ -14,13 +14,13 @@ backward from an answer it has already seen.
 
 ## The dataset
 
-**Trajector-2.5B** is a corpus of **26,999 real coding-agent sessions (2.50B tokens)**,
+**Trajector-2.5B** is a dataset of **26,999 real coding-agent sessions (2.50B tokens)**,
 contributed by developers who authorized their sessions for publication, redacted, and
 released under ODC-BY. Each session records a complete interaction: the system prompt, the
 tool definitions, and the alternating sequence of user messages, assistant messages, tool
 calls, and tool results, spanning six model generations.
 
-What defines the corpus is what it lacks. Across **1.65M assistant turns** it carries only
+What defines the dataset is what it lacks. Across **1.65M assistant turns** it carries only
 **15.3 non-empty reasoning blocks per 100 turns**, and **34% of sessions contain no reasoning
 at all**. The actions are recorded; the reasons are not. A model trained on such data learns
 to imitate what was done rather than work out what to do, and closing that gap is what this
@@ -64,7 +64,7 @@ constraints is what avoids it.
 
 ## Usage
 
-Every script carries a docstring giving its inputs and outputs. They expect a corpus laid out
+Every script carries a docstring giving its inputs and outputs. They expect a dataset laid out
 as session-level JSONL and are written to be read and adapted rather than run end to end;
 there is no orchestrator.
 
@@ -88,4 +88,4 @@ pip install -r requirements.txt
 
 ## License
 
-Code is MIT. The corpus is released separately under ODC-BY.
+Code is MIT. The dataset is released separately under ODC-BY.
