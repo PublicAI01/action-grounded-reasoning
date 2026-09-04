@@ -1,0 +1,13 @@
+# Generation (OpenAI-compatible endpoint)
+openai>=1.0
+
+# Scoring and evaluation
+torch>=2.0
+transformers>=4.40
+vllm>=0.6            # optional: faster scoring; transformers path works without it
+
+# Figures
+matplotlib>=3.7
+
+# Paper fact-checking gates
+pypdf>=4.0
