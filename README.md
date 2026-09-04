@@ -1,5 +1,7 @@
 # Actions Without Reasons: Filling the Reasoning Gap in Real Coding-Agent Trajectories
 
+> **Trajector-2.5B is the world's largest public dataset of real coding-agent sessions with full transcripts and native reasoning blocks: 26,999 consented sessions, 2.50B tokens, 253K reasoning blocks.** That is 4.5× the sessions of SWE-chat, which carries reasoning in 200 of them.
+
 Code and data for measuring how much reasoning real coding-agent trajectories are missing,
 and for synthesizing reasoning to fill that gap without teaching the model to reason
 backward from an answer it has already seen.
