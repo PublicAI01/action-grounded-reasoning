@@ -1,4 +1,4 @@
-# Actions Without Reasons: Filling the Reasoning Gap in Real Coding-Agent Trajectories
+# Actions Without Reasons: Filling the Reasoning Gap in a Large-Scale Public Dataset of Real Coding-Agent Trajectories
 
 > **Trajector-2.5B is the world's largest public dataset of real coding-agent sessions with full transcripts and native reasoning blocks: 26,999 consented sessions, 2.50B tokens, 253K reasoning blocks.** That is 4.5× the sessions of SWE-chat, which carries reasoning in 200 of them.
 
@@ -81,7 +81,7 @@ pip install -r requirements.txt
 
 ```bibtex
 @inproceedings{wang2026actions,
-  title     = {Actions Without Reasons: Filling the Reasoning Gap in Real Coding-Agent Trajectories},
+  title     = {Actions Without Reasons: Filling the Reasoning Gap in a Large-Scale Public Dataset of Real Coding-Agent Trajectories},
   author    = {Wang, Qin},
   booktitle = {NeurIPS 2026 Workshop: Transitioning from Pre-Training to Post-Training},
   year      = {2026}
