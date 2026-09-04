@@ -6,8 +6,8 @@ backward from an answer it has already seen.
 
 | | |
 |---|---|
-| 📄 **Paper** | *link to be added* |
-| 🤗 **Dataset** | *link to be added* |
+| 📄 **Paper** | Actions Without Reasons (NeurIPS 2026 Workshop) — *link to be added* |
+| 🤗 **Dataset** | https://huggingface.co/datasets/publicai-dev/Trajector-2.5B |
 | 📋 **Full collection (by application)** | *link to be added* |
 
 ---
@@ -78,10 +78,10 @@ pip install -r requirements.txt
 ## Citation
 
 ```bibtex
-@inproceedings{actionswithoutreasons2026,
+@inproceedings{wang2026actions,
   title     = {Actions Without Reasons: Filling the Reasoning Gap in Real Coding-Agent Trajectories},
-  author    = {TBD},
-  booktitle = {TBD},
+  author    = {Wang, Qin},
+  booktitle = {NeurIPS 2026 Workshop: Transitioning from Pre-Training to Post-Training},
   year      = {2026}
 }
 ```
