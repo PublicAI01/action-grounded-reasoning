@@ -1,6 +1,6 @@
 # Actions Without Reasons: Filling the Reasoning Gap in a Large-Scale Public Dataset of Real Coding-Agent Trajectories
 
-> **Trajector-2.5B is the world's largest public dataset of real coding-agent sessions with full transcripts and native reasoning blocks: 26,999 consented sessions, 2.50B tokens, 253K reasoning blocks.** That is 4.5× the sessions of SWE-chat, which carries reasoning in 200 of them.
+> **ACT-2.5B: 26,999 consented real coding-agent sessions, 2.50B tokens, 253K native reasoning blocks.**
 
 Code and data for measuring how much reasoning real coding-agent trajectories are missing,
 and for synthesizing reasoning to fill that gap without teaching the model to reason
@@ -8,15 +8,14 @@ backward from an answer it has already seen.
 
 | | |
 |---|---|
-| 📄 **Paper** | Actions Without Reasons (NeurIPS 2026 Workshop) — *link to be added* |
-| 🤗 **Dataset** | https://huggingface.co/datasets/publicai-dev/Trajector-2.5B |
-| 📋 **Full collection (by application)** | *link to be added* |
+| 📄 **Paper** | under review (anonymous) |
+| 🤗 **Dataset** | released upon acceptance |
 
 ---
 
 ## The dataset
 
-**Trajector-2.5B** is a dataset of **26,999 real coding-agent sessions (2.50B tokens)**,
+**ACT-2.5B** is a dataset of **26,999 real coding-agent sessions (2.50B tokens)**,
 contributed by developers who authorized their sessions for publication, redacted, and
 released under ODC-BY. Each session records a complete interaction: the system prompt, the
 tool definitions, and the alternating sequence of user messages, assistant messages, tool
@@ -30,7 +29,7 @@ repository is about.
 
 The public subset is one third of a collection of **88,129 consented sessions (8.1B tokens)**.
 Redaction of the remaining **5.6B tokens** is in progress. Access to the full collection is by
-application: *link to be added*.
+application after acceptance.
 
 > The three paragraphs above are the canonical description of the dataset. They are reproduced
 > verbatim in the paper and on the dataset card; change them in one place and change them
@@ -80,11 +79,11 @@ pip install -r requirements.txt
 ## Citation
 
 ```bibtex
-@inproceedings{wang2026actions,
-  title     = {Actions Without Reasons: Filling the Reasoning Gap in a Large-Scale Public Dataset of Real Coding-Agent Trajectories},
-  author    = {Wang, Qin},
-  booktitle = {NeurIPS 2026 Workshop: Transitioning from Pre-Training to Post-Training},
-  year      = {2026}
+@inproceedings{anonymous2026actions,
+  title  = {Actions Without Reasons: Filling the Reasoning Gap in a Large-Scale Public Dataset of Real Coding-Agent Trajectories},
+  author = {Anonymous},
+  year   = {2026},
+  note   = {Under review}
 }
 ```
 
