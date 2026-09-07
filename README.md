@@ -1,5 +1,9 @@
 # Actions Without Reasons: Filling the Reasoning Gap in a Large-Scale Public Dataset of Real Coding-Agent Trajectories
 
+> **What this repository is.** The experiment code behind the paper: reasoning synthesis,
+> the leak check, sufficiency scoring, evaluation harnesses, and figure generation. It
+> contains no manuscript sources; nothing here builds a PDF.
+
 > **ACT-2.5B: 26,999 consented real coding-agent sessions, 2.50B tokens, 253K native reasoning blocks.**
 
 Code and data for measuring how much reasoning real coding-agent trajectories are missing,
@@ -60,7 +64,7 @@ constraints is what avoids it.
 |---|---|
 | `synthesis/` | Candidate generation. Writer prompting under coarse conditioning, the deliberately-leaking hindsight control used to make the bias measurable, and position selection. |
 | `scoring/` | The method and its evaluation. Entity-leak gate, sufficiency scoring, group-wise ranking, ruler validation, and the harnesses for held-out thinking perplexity and action log-probability. |
-| `paper_tools/` | Fact-checking gates for the paper: every citation must resolve, every reported number must recompute from a source file, and every figure must derive from data rather than hardcoded values. |
+| `claim_checks/` | Fact-checking gates we ran on our own manuscript: every citation must resolve, every reported number must recompute from a source file, and every figure must derive from data rather than hardcoded values. |
 | `figures/` | Figure generation. Each figure emits a provenance record alongside its PDF. |
 
 ## Usage
