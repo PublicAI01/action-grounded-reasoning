@@ -1,6 +1,6 @@
 # Actions Without Reasons: Filling the Reasoning Gap in a Large-Scale Public Dataset of Real Coding-Agent Trajectories
 
-> **Trajector-2.5B is the world's largest public dataset of real coding-agent sessions with full transcripts and native reasoning blocks: 26,999 consented sessions, 2.50B tokens, 253K reasoning blocks.** That is 4.5× the sessions of SWE-chat, which carries reasoning in 200 of them.
+> **Trajector-SWE-20K is a public dataset of 20,000 real coding-agent sessions with full transcripts and native reasoning blocks, collected with the [Trajector](https://trajector.publicai.io) plugin from developers who authorized publication.** It has 3.3× as many sessions as SWE-chat and contains 136K non-empty native reasoning blocks, whereas SWE-chat provides reasoning traces for 200 sessions.
 
 Code and data for measuring how much reasoning real coding-agent trajectories are missing,
 and for synthesizing reasoning to fill that gap without teaching the model to reason
@@ -9,32 +9,33 @@ backward from an answer it has already seen.
 | | |
 |---|---|
 | 📄 **Paper** | Actions Without Reasons (NeurIPS 2026 Workshop) — *link to be added* |
-| 🤗 **Dataset** | https://huggingface.co/datasets/publicai-dev/Trajector-2.5B |
-| 📋 **Full collection (by application)** | *link to be added* |
+| 🤗 **Dataset (20,000 sessions; access on request)** | https://huggingface.co/datasets/publicai-dev/Trajector-SWE-20K |
+| 🤗 **Open sample (2,000 sessions, direct download)** | https://huggingface.co/datasets/publicai-dev/Trajector-SWE-20K-sample |
+| 📋 **Remaining sessions of the collection (by application)** | opensource@publicai.io |
 
 ---
 
 ## The dataset
 
-**Trajector-2.5B** is a dataset of **26,999 real coding-agent sessions (2.50B tokens)**,
-contributed by developers who authorized their sessions for publication, redacted, and
-released under ODC-BY. Each session records a complete interaction: the system prompt, the
-tool definitions, and the alternating sequence of user messages, assistant messages, tool
-calls, and tool results, spanning six model generations.
+**Trajector-SWE-20K** is a dataset of **20,000 real coding-agent sessions** (about 0.89B
+tokens of released text, estimated from characters), contributed by developers who
+authorized their sessions for publication, redacted, screened for residual credentials,
+decontaminated, and released under ODC-BY. Each session records a complete interaction: the
+system prompt, the tool definitions, and the alternating sequence of user messages,
+assistant messages, tool calls, and tool results, spanning six model generations.
 
-What defines the dataset is what it lacks. Across **1.65M assistant turns** it carries only
-**15.3 non-empty reasoning blocks per 100 turns**, and **34% of sessions contain no reasoning
-at all**. The actions are recorded; the reasons are not. A model trained on such data learns
-to imitate what was done rather than work out what to do, and closing that gap is what this
-repository is about.
+What defines the dataset is what it lacks. Across **775K assistant turns** it carries only
+**17.6 non-empty reasoning blocks per 100 turns**, and **37% of sessions contain no
+non-empty reasoning at all**. The actions are recorded; the reasons mostly are not. A model
+trained on such data learns to imitate what was done rather than work out what to do, and
+closing that gap is what this repository is about.
 
-The public subset is one third of a collection of **88,129 consented sessions (8.1B tokens)**.
-Redaction of the remaining **5.6B tokens** is in progress. Access to the full collection is by
-application: *link to be added*.
+The release is drawn from a collection of about **88K consented sessions**. The remaining
+sessions have not completed the same redaction and audit process; access to them is by
+application to opensource@publicai.io.
 
-> The three paragraphs above are the canonical description of the dataset. They are reproduced
-> verbatim in the paper and on the dataset card; change them in one place and change them
-> everywhere.
+The full statistics, the consent terms, the redaction and screening procedure and the data
+format are on the dataset card.
 
 ## What this code does
 
@@ -82,7 +83,7 @@ pip install -r requirements.txt
 ```bibtex
 @inproceedings{wang2026actions,
   title     = {Actions Without Reasons: Filling the Reasoning Gap in a Large-Scale Public Dataset of Real Coding-Agent Trajectories},
-  author    = {Wang, Qin},
+  author    = {Wang, Qin and Owji, Afsoun and Yin, Hang and Liu, Guangyi},
   booktitle = {NeurIPS 2026 Workshop: Transitioning from Pre-Training to Post-Training},
   year      = {2026}
 }
