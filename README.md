@@ -13,6 +13,9 @@ backward from an answer it has already seen.
 | 🤗 **Open sample (2,000 sessions, direct download)** | https://huggingface.co/datasets/publicai-dev/Trajector-SWE-20K-sample |
 | 📋 **Remaining sessions of the collection (by application)** | opensource@publicai.io |
 
+Access to the full dataset is granted on request under conditions that forbid re-hosting or
+re-publishing the sessions; please link to the dataset page rather than mirroring files.
+
 ---
 
 ## The dataset
