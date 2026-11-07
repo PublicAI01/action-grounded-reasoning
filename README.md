@@ -33,6 +33,9 @@ non-empty reasoning at all**. The actions are recorded; the reasons mostly are n
 trained on such data learns to imitate what was done rather than work out what to do, and
 closing that gap is what this repository is about.
 
+The full release is available on request from the dataset page, and a 2,000-session sample
+is openly downloadable at https://huggingface.co/datasets/publicai-dev/Trajector-SWE-20K-sample.
+
 The release is drawn from a collection of about **88K consented sessions**. The remaining
 sessions have not completed the same redaction and audit process; access to them is by
 application to opensource@publicai.io.
